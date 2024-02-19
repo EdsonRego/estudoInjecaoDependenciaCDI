@@ -1,5 +1,8 @@
 package com.edsonrego.estudoInjecaoDependenciaCDI.services;
 
+import org.springframework.stereotype.Service;
+
+@Service //ou @Component
 public class SalarioService {
 
     private PrevidenciaService previdenciaService;
