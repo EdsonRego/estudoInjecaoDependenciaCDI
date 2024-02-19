@@ -10,11 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class EstudoInjecaoDependenciaCdiApplication implements CommandLineRunner	 {
 
+	@Autowired
 	private SalarioService salarioService;
-
-	public EstudoInjecaoDependenciaCdiApplication(SalarioService salarioService) {
-		this.salarioService = salarioService;
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(EstudoInjecaoDependenciaCdiApplication.class, args);
